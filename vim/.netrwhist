@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/bryan/Downloads/peepcode-vim-code/tutorial-apache-files'
-let g:netrw_dirhist_2='/Users/bryan/dotfiles'
-let g:netrw_dirhist_3='/Users/bryan/dotfiles/vim'
-let g:netrw_dirhist_4='/Users/bryan/Sites/www/nso3/site'
-let g:netrw_dirhist_5='/Users/bryan/Sites/www/nso3/site/apps'
-let g:netrw_dirhist_6='/Users/bryan/Sites/www/nso3/site'
