@@ -13,3 +13,6 @@
 [submodule "vim/bundle/command-t"]
 	path = vim/bundle/command-t
 	url = git://git.wincent.com/command-t.git
+[submodule "repos/dterei-VimCobaltColourScheme"]
+	path = repos/dterei-VimCobaltColourScheme
+	url = https://github.com/dterei/VimCobaltColourScheme.git
