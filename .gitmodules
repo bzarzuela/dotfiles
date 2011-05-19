@@ -10,3 +10,6 @@
 [submodule "vim/bundle/tsaleh-vim-tcomment"]
 	path = vim/bundle/tsaleh-vim-tcomment
 	url = https://github.com/tsaleh/vim-tcomment.git
+[submodule "vim/bundle/command-t"]
+	path = vim/bundle/command-t
+	url = git://git.wincent.com/command-t.git
