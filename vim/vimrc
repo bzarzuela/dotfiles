@@ -85,3 +85,6 @@ autocmd BufNewFile,BufRead *_spec.rb compiler rspec
 
 " For the excuberant ctags
 let Tlist_Ctags_Cmd = '/opt/local/bin/ctags'
+
+" For automatically compiling coffeescript
+autocmd BufWritePost,FileWritePost *.coffee :silent !coffee -cb <afile>
