@@ -22,3 +22,6 @@
 [submodule "vim/bundle/scrooloose-syntastic"]
 	path = vim/bundle/scrooloose-syntastic
 	url = https://github.com/scrooloose/syntastic.git
+[submodule "repos/kchmck-vim-coffee-script"]
+	path = repos/kchmck-vim-coffee-script
+	url = git://github.com/kchmck/vim-coffee-script.git
