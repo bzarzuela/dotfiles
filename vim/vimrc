@@ -102,6 +102,7 @@ let Tlist_Ctags_Cmd = '/opt/local/bin/ctags'
 autocmd BufWritePost,FileWritePost *.coffee :silent !coffee -cb <afile>
 
 " Shortcut to rapidly toggle `set list`
+" This is for displaying the hidden characters
 nmap <leader>l :set list!<CR>
  
 " Use the same symbols as TextMate for tabstops and EOLs
@@ -116,3 +117,20 @@ set fuopt=maxvert,maxhorz
 
 " For removing the left scroll bar in macvim
 set go -=L
+
+
+	" NerdTree {
+		map <C-e> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
+		map <leader>e :NERDTreeFind<CR>
+		nmap <leader>nt :NERDTreeFind<CR>
+
+		let NERDTreeShowBookmarks=1
+		let NERDTreeIgnore=['\.pyc', '\~$', '\.swo$', '\.swp$', '\.git', '\.hg', '\.svn', '\.bzr']
+		let NERDTreeChDirMode=0
+		let NERDTreeQuitOnOpen=1
+		let NERDTreeShowHidden=1
+		let NERDTreeKeepTreeInNewTab=1
+	" }
+
+" Snipmate author
+let g:snips_author = 'Bryan Zarzuela <bryan@teleserv.ph>'
