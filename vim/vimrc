@@ -46,6 +46,7 @@ set directory=$HOME/.vim/tmp//,.  " Keep swap files in one location
 set tabstop=2                    " Global tab width.
 set shiftwidth=2                 " And again, related.
 set expandtab                    " Use spaces instead of tabs
+set softtabstop=2                " For backspace to work properly with soft tabs
 
 set laststatus=2                  " Show the status line all the time
 " Useful status information at bottom of screen
@@ -134,3 +135,8 @@ set go -=L
 
 " Snipmate author
 let g:snips_author = 'Bryan Zarzuela <bryan@teleserv.ph>'
+	
+" Supertab {
+  let g:SuperTabDefaultCompletionType = "context"
+  let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
+" }
