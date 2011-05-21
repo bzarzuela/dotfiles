@@ -1,0 +1,17 @@
+[user]
+	name = Bryan Zarzuela
+	email = bryan@teleserv.ph
+	
+[alias]
+	ca = commit -am 
+	s = status
+  c = commit -m 
+
+[core]
+	editor = mate -w
+[color]
+	status = auto
+	branch = auto
+	diff = auto
+[difftool "Kaleidoscope"]
+	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
