@@ -3,6 +3,8 @@
 
 set nocompatible                  " Must come first because it changes other options.
 
+" Regenerate all help tags and run pathogen
+silent! call pathogen#helptags()
 silent! call pathogen#runtime_append_all_bundles()
 
 syntax enable                     " Turn on syntax highlighting.
@@ -55,6 +57,9 @@ set statusline+=%*
 " Or use vividchalk
 colorscheme vividchalk
 
+
+let mapleader = ','
+
 " Tab mappings.
 map <leader>tt :tabnew<cr>
 map <leader>te :tabedit
@@ -70,11 +75,18 @@ map <leader>tm :tabmove
 "map <Leader>t :FuzzyFinderTextMate<Enter>
 
 " Controversial...swap colon and semicolon for easier commands
-"nnoremap ; :
+nnoremap ; :
 "nnoremap : ;
 
 "vnoremap ; :
 "vnoremap : ;
+
+" Stupid shift key fixes
+cmap W w 						
+cmap WQ wq
+cmap wQ wq
+cmap Q q
+cmap Tabe tabe
 
 " Automatic fold settings for specific files. Uncomment to use.
 " autocmd FileType ruby setlocal foldmethod=syntax
@@ -88,3 +100,19 @@ let Tlist_Ctags_Cmd = '/opt/local/bin/ctags'
 
 " For automatically compiling coffeescript
 autocmd BufWritePost,FileWritePost *.coffee :silent !coffee -cb <afile>
+
+" Shortcut to rapidly toggle `set list`
+nmap <leader>l :set list!<CR>
+ 
+" Use the same symbols as TextMate for tabstops and EOLs
+set listchars=tab:▸\ ,eol:¬
+
+"Invisible character colors
+highlight NonText guifg=#4a4a59
+highlight SpecialKey guifg=#4a4a59
+
+" Full screen all the way baby
+set fuopt=maxvert,maxhorz
+
+" For removing the left scroll bar in macvim
+set go -=L
